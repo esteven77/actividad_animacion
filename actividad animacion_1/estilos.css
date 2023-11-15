@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fondo{
+    background-image: url(imagenes/fondos.png);
+    background-size: cover;      
+    width: 1742px;
+    height: 980px;
+    margin: auto;
+    
+}
+.fondo_mover{
+    animation: fondo_animado 10s linear  infinite;
+}
+@keyframes fondo_animado{
+    100%{
+        background-position-x: -10000px;
+    }
+}
+
+.carro{
+    width: 40rem;
+    position: absolute;
+    bottom: 250px;
+    margin-left: 680px;
+    
+}
+
+.carro1{
+    width: 25rem;
+}
+.carro_mover{
+    
+    animation: llanta_move 2s linear infinite;
+    animation: llanta_move 2s linear infinite;
+    
+}
+@keyframes carro_animado{
+    100%{
+        transform: translateY(2px);
+    }
+}
+
+.llanta{
+    position: absolute;
+    bottom: 220px;
+    margin-left: 696px;
+    
+   }
+
+.llanta_1{
+    width: 5rem;   
+    
+
+}
+@keyframes llanta_move{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.llanta_2{
+    position: absolute;
+    bottom: 220px;
+    margin-left: 968px;
+   
+    
+}
+
+/*.llanta_der {*/
+   /*  animation: llanta_move 2s linear infinite; */
+
+
+
+@keyframes llanta_movee{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.luces{
+    position: absolute;
+    top: 0;
+    
+}
+
+.polvo{
+    position: absolute;
+    background-image: url(./imagenes/polvo.png);
+    
+    width: 3.6rem;
+    height: 5rem;
+    margin-top: 595px;
+    margin-left: 600px;
+    animation: polvo_move 2s steps(6) infinite;
+    
+}
+.oculto{
+    display: none;
+}
+
+
+@keyframes polvo_move{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -900px  0 ;
+    }
+}
+
+
+
+.luces_1{
+    width: 10rem;
+    margin-top: 550px;
+    margin-left: 1040px;
+    animation: luces_move 1s linear infinite;
+}
+
+@keyframes luces_move{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+}
+
